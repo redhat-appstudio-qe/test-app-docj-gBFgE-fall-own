@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-bwev
+  namespace: build-e2e-cobr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:7fd29ff040b133a083f0c655640139831108bfe7d34d9b9aff19082898120c56
+        name: my-python
+        resources: {}
+status: {}
