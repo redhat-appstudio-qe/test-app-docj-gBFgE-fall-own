@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-bwev
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:81b5e10cb995471c9522768a360a312e
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:7fd29ff040b133a083f0c655640139831108bfe7d34d9b9aff19082898120c56
         name: my-python
         ports:
         - containerPort: 8081
